@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx
 spec:
   selector:
     matchLabels:
@@ -29,7 +29,7 @@ spec:
   loadBalancerIP: 10.10.1.240
   type: LoadBalancer
   selector:
-    app: nginx-deployment
+    app: nginx
   ports:
   - name: http
     port: 80
