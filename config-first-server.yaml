@@ -1,0 +1,5 @@
+# For first HA k3s master node
+# mkdir /etc/rancher/k3s -p
+# edit /etc/rancher/k3s/config.yaml
+cluster-init: true
+disable: servicelb

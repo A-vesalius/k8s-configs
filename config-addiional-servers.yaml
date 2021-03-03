@@ -1,0 +1,6 @@
+# for each additional k3s HA servers include at /etc/rancher/k3s/config.yaml
+# mkdir /etc/rancher/k3s -p
+# edit /etc/rancher/k3s/config.yaml
+# use cat /var/lib/rancher/k3s/server/node-token on 1st k3s server to get server token
+token: "K10d3891ef581003b9744a8dd9785b40ee35570c0980ddbcb77a1c0c8976a326531::server:fd210b2826e0d6a9b310a79a19ea1695"
+server: "https://10.10.1.16:6443"
