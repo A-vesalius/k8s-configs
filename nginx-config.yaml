@@ -15,11 +15,11 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
-        ports:
-        - containerPort: 80
-        - containerPort: 443
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+            - containerPort: 443
 ---
 apiVersion: v1
 kind: Service
@@ -31,11 +31,11 @@ spec:
   selector:
     app: nginx
   ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 80
-    name: http
-  - port: 443
-    protocol: TCP
-    targetPort: 443
-    name: https
+    - port: 80
+      protocol: TCP
+      targetPort: 80
+      name: http
+    - port: 443
+      protocol: TCP
+      targetPort: 443
+      name: https
